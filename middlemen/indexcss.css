@@ -1,0 +1,14 @@
+.train {
+    background-color: chocolate;
+    width: 800px;
+    height: 600px;
+    position: relative;
+}
+.change {
+    alignment: center;
+    color: blue;
+    text-align: center;
+}
+#no {
+    position: absolute;
+}
