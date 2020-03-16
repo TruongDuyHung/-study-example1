@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>nhập từ cần tra cứu: <input id="inp"></p>
+<button onclick="translate1()">Dịch Từ</button>
+<p id="result"></p>
+<script>
+    function translate1() {
+        let inputE = ["love", "how", "why"];
+        let outputVN = ["Yeu", "baonhieu", "tại sao"];
+        let inputText = document.getElementById('inp').value;
+        for (let i = 0; i < inputE.length; i++) {
+            if (inputText === inputE[i]) {
+                document.getElementById('result').innerHTML = outputVN[i];
+            } else {
+                alert('Fail');
+            } break;
+        }
+    }
+</script>
+</body>
+</html>
