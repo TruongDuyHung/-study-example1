@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra số nguyên tố</title>
+</head>
+<body>
+
+</body>
+
+<script>
+    function prime(n) {
+        if (n < 2)
+            return false;
+        for (let i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i == 0)
+                return false
+        }
+        return true;
+    }
+
+    let number;
+
+    do {
+        number= +prompt('Nhập vào số nguyên nhỏ hơn 10000:')
+    }while (number >= 10000)
+    alert(prime(number));
+</script>
+</html>
