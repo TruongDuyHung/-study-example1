@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body><p>
+<input type="number" id="input1" placeholder="Nhap do dai(m)"
+oninput="converMetter(this.value)"> <h4>Chuyen met sang inch</h4>
+<span><h3 id="result"></h3></span>
+</p>
+<input type="number" id="input2" placeholder="Nhap do dai(inch)"
+       oninput="converMette(this.value)"><h4>Chuyen inch sang met</h4>
+</p>
+<h3 id="result1"></h3>
+<script>
+function converMetter(valueM) {
+    valueM = parseFloat(valueM);
+    document.getElementById('result').innerHTML = valueM*3.279 +"&nbsp"+"inch";
+}
+function converMette(valueM1) {
+    valueM1 = parseFloat(valueM1);
+    document.getElementById('result1').innerHTML = valueM1 * 0.305 + "&nbsp" + "met";
+}
+</script>
+</body>
+</html>
