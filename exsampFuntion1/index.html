@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function alertMessage() {
+document.write('Xin chao' + "<br>");
+    }
+    alertMessage();
+    function funtion1() {
+        let value1 = arguments[0];
+        value1 ++;
+        document.write(value1+ "<br>");
+    }
+    funtion1(4);
+    function funtion2() {
+        let num1= arguments[0];
+        num1 = parseFloat(num1);
+        let num2= arguments[1];
+        num2 =parseFloat(num2);
+        if (num1>num2)
+            document.write("So thu 1 lon hon so thu 2");
+        else {
+          document.write("Tong 2 so la "+ (num2+num1)+ '<br>');
+        }
+    }
+    funtion2(3,4);
+    function addNumbers() {
+    firstNum = 4;
+    secondNum= 8;
+    result= firstNum+secondNum;
+    return result;
+    }
+    result = 0;
+    alert(result);
+    result = addNumbers();
+    alert(result);
+    let x = ['Ursa Minor','Tarusrus','Cygnus','Lyra','Aquila','Ursa Major','Leo'];
+    let y = ['Polaris','Aldebaran','Deneb','Vega','Altair','Dubhe','Regulus'];
+    function fun5(value1) {
+        for (let i = 0; i < y.length; i++)
+            if (y[i] === value1) {
+                document.write(x[i] + "<br");
+            }
+        document.write('Khong co ngoi sao nao');
+    }
+
+    let a = prompt('Nhap vao ten ngoi sao');
+    fun5(a);
+</script>
+</body>
+</html>
