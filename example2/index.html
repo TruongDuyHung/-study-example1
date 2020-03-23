@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+      //bai 1
+        function input() {
+    // let a = prompt('Nhap so can tim');
+    //  a = parseFloat(a);
+            let a =+ prompt('Nhap so can tim ');
+    a = a**2;
+    document.write('Binh phuong cua so day la '+ a);
+        }
+       // input();
+       // bai 2
+        function calculate() {
+    let x =+ prompt('Nhap ban kinh a vao ');
+    const PI= 3.14;
+    let perimeter = PI*(x*2);
+    let acreage = PI*(x**2);
+    document.write('Chu vi la'+ perimeter);
+    document.write('Dien tich la '+ acreage);
+        }
+       // calculate();
+        // bai 3
+        function factorial() {
+            let k;
+    let x = prompt('Nhap so nguyen a')
+            x = parseInt(x);
+    for (let i = 1; i <x;i++)
+        k = k*i;
+    document.write('Giai thua cua so x là '+k);
+        }
+        // factorial();
+    // bai 4
+        function checkCharacter() {
+    let a = prompt('Nhap ki tu bat ki');
+    if (a>='0'&& a<='9')
+        console.log(true);
+    else console.log(false);
+        }
+        // checkCharacter();
+//bai 5
+    function minInt() {
+let a = prompt('Nhap 3 so bat ki ');
+a = parseInt(a);
+        let b = prompt('Nhap 3 so bat ki ');
+        b= parseInt(b);
+        let c = prompt('Nhap 3 so bat ki ');
+        c = parseInt(c);
+        if (a<b && a < c)
+                document.write('a nho nhat');
+        if (b<a && b<c)
+            document.write("B nho nhat");
+        if (c<a && c<b)
+            document.write(' C nho nhat');
+        if (a==b && b ==c)
+            alert(' Nhap lai 3 so vi 3 so bang nhau');
+    }
+   // minInt();
+
+    // bai 6
+    function checkNumber() {
+    let a = prompt(' Nhap so a');
+    if (a>0 && a%1== 0)
+    document.write(true);
+    else document.write(false);
+    }
+    // checkNumber();
+
+    //bai 7
+   
+    function swapNumber() {
+            let a = parseInt(prompt('Nhap so nguyen a'));
+            let b = parseInt(prompt('Nhap so nguyen b'));
+            let c = a;
+            a= b;
+            document.write("So a la "+a+"<br>");
+            b=c;
+            document.write('so b la '+b);
+    }
+    // swapNumber();
+
+    //Bai8
+    function exerciseArry() {
+            let x = parseInt(prompt('Nhap phan tu 1 cua mang '));
+        let y = parseInt(prompt('Nhap phan tu 1 cua mang '));
+        let z = parseInt(prompt('Nhap phan tu 1 cua mang '));
+
+    let a= [];
+    a.push(x);
+    a.push(y);
+    a.push(z);
+    a.reverse();
+    document.write('Doi cho cac phan tu trong mang '+a);
+    }
+    // exerciseArry();
+
+    // Bài 9;
+function exerciseFunction() {
+            let x = [];
+    let a = prompt(' Nhập kí tự 1 trong mảng ');
+    let b = prompt(' Nhập kí tự 2 trong mảng ');
+    let c = prompt(' Nhập kí tự 3 trong mảng ');
+    let d = prompt(' Nhập kí tự 4 trong mảng ');
+    let e = prompt(' Nhập kí tự bất kì ');
+    x.push(a);
+    x.push(b);
+    x.push(c);
+    x.push(d);
+    let count = 0;
+    for (let i = 0;i<x.length;i++) {
+        if (e===x[i]) {
+            count++;
+            document.write('Lan '+count+ ' ki tu e xuat hien trong mang'+"<br>");
+        }
+        }
+    if (count==0)
+        document.write('Số lần xuất hiện của kí tự e trong mảng là -1');
+}
+exerciseFunction();
+</script>
+</body>
+</html>
