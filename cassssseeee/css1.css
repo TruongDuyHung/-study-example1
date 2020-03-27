@@ -1,0 +1,18 @@
+.effect {
+   width: 2000px;
+   height: auto;
+   float: right;
+}
+.color {
+   background-color: rebeccapurple;
+}
+.bel {
+   color: chartreuse;
+   font-variant-position: super;
+}
+.bgimage {
+   background-image: url("magic.gif");
+}
+.size {
+   size: 1000px;
+}
